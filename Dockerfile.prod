@@ -1,0 +1,9 @@
+iFROM node:12.4-alpine as builder
+WORKDIR /talent-ui-react
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=builder  /talent-ui-react/build /usr/share/nginx/html
