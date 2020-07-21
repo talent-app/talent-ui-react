@@ -1,1 +1,1 @@
-(cd .. && docker run --rm -v `pwd`/build:/talent-ui-react/build talent-ui-react npm run build)
+(cd .. && docker run --rm -v `pwd`/build:/talent-ui-react/build -v `pwd`/public:/talent-ui-react/public -v `pwd`/src:/talent-ui-react/src -v `pwd`/package.json:/talent-ui-react/package.json -v `pwd`/package-lock.json:/talent-ui-react/package-lock.json talent-ui-react npm run build)

@@ -1,8 +1,12 @@
 FROM node:alpine
-WORKDIR /snaas-ui-react
+WORKDIR /talent-ui-react
 COPY package.json package-lock.json /talent-ui-react/
 RUN npm install
 
 VOLUME /talent-ui-react/src
+VOLUME /talent-ui-react/public
 VOLUME /talent-ui-react/build
+VOLUME package.json
+VOLUME package-lock.json
+
 CMD npm start
