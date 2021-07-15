@@ -1,0 +1,27 @@
+.feed {
+
+  padding-top: 15px;
+
+}
+
+.feed-card {
+  color: black;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.feed-card img {
+  width: 25%;
+  margin: auto;
+}
+.time-ago {
+  float: right;
+}
+
+.like, .like:hover, .like:active, .like:focus {
+  font-size: 1.5em;
+  color: red;
+  background: none;
+  border: none;
+}
